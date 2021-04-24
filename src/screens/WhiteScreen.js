@@ -1,30 +1,10 @@
 /* eslint-disable react-native/no-inline-styles */
 
 //Экран для проверки наличия авторизации
-
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import React, {useEffect} from 'react';
+import React from 'react';
 import {View, Text, ActivityIndicator} from 'react-native';
 
 const WhiteScreen = props => {
-  const {navigation} = props;
-
-  //Проверяем, был ли уже осуществлен вход в приложение
-  useEffect(() => {
-    AsyncStorage.getItem('KeyChainActive')
-      .then(res => {
-        console.log('RES', res);
-        if (res) {
-          navigation.navigate('PincodeScreen');
-        } else {
-          navigation.navigate('LoginScreen');
-        }
-      })
-      .catch(err => {
-        console.log('CRED ERR', err);
-      });
-  }, [navigation]);
-
   return (
     <View
       style={{

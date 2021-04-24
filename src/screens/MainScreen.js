@@ -1,21 +1,24 @@
-/* eslint-disable react-native/no-inline-styles */
-
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 const MainScreen = props => {
-  return (
-    <View
-      style={{
+    return (
+        <View style={styles.screenContainer}>
+            <Text style={styles.title}>Поздравляем вы зашли!</Text>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    screenContainer: {
         flex: 1,
         justifyContent: 'center',
         backgroundColor: 'white',
-      }}>
-      <Text style={{textAlign: 'center', fontSize: 18}}>
-        Поздравляем вы зашли!
-      </Text>
-    </View>
-  );
-};
+    },
+    title: {
+        textAlign: 'center',
+        fontSize: 18,
+    },
+});
 
 export default MainScreen;
