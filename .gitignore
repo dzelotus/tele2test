@@ -1,0 +1,7 @@
+#Ignore everything
+*
+#Except src directory
+!src/
+!src/**
+!.gitignore
+!package.json
