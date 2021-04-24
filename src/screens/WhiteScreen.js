@@ -4,8 +4,7 @@
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, {useEffect} from 'react';
-import {View, Text, StyleSheet, ActivityIndicator} from 'react-native';
-import * as Keychain from 'react-native-keychain';
+import {View, Text, ActivityIndicator} from 'react-native';
 
 const WhiteScreen = props => {
   const {navigation} = props;

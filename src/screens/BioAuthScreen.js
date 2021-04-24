@@ -1,16 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
-import {isEqual} from 'lodash';
-import React, {useState} from 'react';
-import {
-  View,
-  Text,
-  FlatList,
-  TouchableOpacity,
-  Button,
-  Alert,
-  StyleSheet,
-} from 'react-native';
 
+import React from 'react';
+import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import FingerprintScanner from 'react-native-fingerprint-scanner';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
